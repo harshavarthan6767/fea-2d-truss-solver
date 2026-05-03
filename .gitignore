@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+results_nodes.csv
+results_stresses.csv
+truss_plot.png
+agents/log_*.txt
