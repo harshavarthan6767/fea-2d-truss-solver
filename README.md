@@ -29,7 +29,10 @@ The current `main.py` solves a simple 3-bar triangular truss with a 10kN downwar
 
 ### Sample Output
 ```
-Solver completed. Results saved to results_nodes.csv and results_stresses.csv
+Success! FEA Completed.
+Max Displacement: 1.5000e-03 m
+Max Stress: 26.67 MPa
+Results saved to results_nodes.csv and results_elements.csv
 Saved visualization to truss_plot.png
 ```
 
