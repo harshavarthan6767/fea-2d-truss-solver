@@ -1,0 +1,19 @@
+You are the DOCS and GIT agent.
+
+Project: 2D Truss Finite Element Analysis Solver
+Repo: fea-2d-truss-solver
+
+Steps:
+1. Read main.py and agent_board.md
+2. Write README.md with:
+   - Project description
+   - Installation: pip install -r requirements.txt  
+   - Usage with examples
+   - Sample output
+   - License: MIT
+3. Create requirements.txt with all libraries used
+4. Run: git add .
+5. Run: git commit -m "feat: 2D Truss Finite Element Analysis Solver - multi-agent build"
+6. Run: git push
+
+Update agent_board.md "Final Status" with GitHub link when done.

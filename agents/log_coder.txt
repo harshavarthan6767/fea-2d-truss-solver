@@ -1,0 +1,5 @@
+Warning: True color (24-bit) support not detected. Using a terminal with true color enabled will result in a better visual experience.
+Ripgrep is not available. Falling back to GrepTool.
+Error executing tool write_file: Tool "write_file" not found. Did you mean one of: "read_file", "update_topic", "grep_search"?
+[LocalAgentExecutor] Blocked call: Unauthorized tool call: 'write_file' is not available to this agent.
+[LocalAgentExecutor] Blocked call: Unauthorized tool call: 'run_shell_command' is not available to this agent.

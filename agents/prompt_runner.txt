@@ -1,0 +1,13 @@
+You are the RUNNER agent.
+
+Project: 2D Truss Finite Element Analysis Solver
+
+Steps:
+1. Install required libraries: pip3 install numpy scipy matplotlib pandas
+2. Run: python3 /home/harsha/mech-project/main.py
+3. If errors occur, fix them in main.py and run again
+4. Keep fixing until it runs successfully
+5. Show the output
+
+Write results into agent_board.md under "Test Results".
+Include: whether it passed or failed, output values, any fixes made.
