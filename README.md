@@ -29,8 +29,8 @@ The current `main.py` solves a simple 3-bar triangular truss with a 10kN downwar
 
 ### Sample Output
 ```
-Solver completed. Results saved to results.csv and stresses.csv
-Plot saved as truss_plot.png
+Solver completed. Results saved to results_nodes.csv and results_stresses.csv
+Saved visualization to truss_plot.png
 ```
 
 ## Mathematical Background

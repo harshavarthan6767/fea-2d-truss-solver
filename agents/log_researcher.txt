@@ -8,3 +8,54 @@ Attempt 2 failed: You have exhausted your capacity on this model. Your quota wil
 Attempt 3 failed: You have exhausted your capacity on this model. Your quota will reset after 1s.. Retrying after 20068ms...
 Error executing tool replace: Tool "replace" not found. Did you mean one of: "read_file", "grep_search", "glob"?
 Attempt 1 failed: You have exhausted your capacity on this model. Your quota will reset after 0s.. Retrying after 5253ms...
+[LocalAgentExecutor] Blocked call: Unauthorized tool call: 'replace' is not available to this agent.
+[LocalAgentExecutor] Blocked call: Unauthorized tool call: 'write_file' is not available to this agent.
+[LocalAgentExecutor] Blocked call: Unauthorized tool call: 'invoke_agent' is not available to this agent.
+[LocalAgentExecutor] Blocked call: Unauthorized tool call: 'run_shell_command' is not available to this agent.
+Attempt 1 failed. Retrying with backoff... _GaxiosError: request to https://cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse failed, reason: 
+    at Gaxios._request (file:///mnt/c/Users/harsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-SZYCJREE.js:8809:66)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async _OAuth2Client.requestAsync (file:///mnt/c/Users/harsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-SZYCJREE.js:10768:16)
+    at async CodeAssistServer.requestStreamingPost (file:///mnt/c/Users/harsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-SZYCJREE.js:272574:17)
+    at async CodeAssistServer.generateContentStream (file:///mnt/c/Users/harsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-SZYCJREE.js:272374:23)
+    at async file:///mnt/c/Users/harsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-SZYCJREE.js:273221:19
+    at async file:///mnt/c/Users/harsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-SZYCJREE.js:250128:23
+    at async retryWithBackoff (file:///mnt/c/Users/harsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-SZYCJREE.js:270322:23)
+    at async GeminiChat.makeApiCallAndProcessStream (file:///mnt/c/Users/harsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-SZYCJREE.js:292938:28)
+    at async GeminiChat.streamWithRetries (file:///mnt/c/Users/harsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-SZYCJREE.js:292776:29) {
+  config: {
+    url: 'https://cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse',
+    method: 'POST',
+    params: { alt: 'sse' },
+    headers: {
+      'Content-Type': 'application/json',
+      'User-Agent': 'GeminiCLI/0.40.0/gemini-3.1-pro-preview (linux; x64; terminal) google-api-nodejs-client/9.15.1',
+      Authorization: '<<REDACTED> - See `errorRedactor` option in `gaxios` for configuration>.',
+      'x-goog-api-client': 'gl-node/20.20.2'
+    },
+    responseType: 'stream',
+    body: '<<REDACTED> - See `errorRedactor` option in `gaxios` for configuration>.',
+    signal: AbortSignal { aborted: false },
+    retry: false,
+    paramsSerializer: [Function: paramsSerializer],
+    validateStatus: [Function: validateStatus],
+    errorRedactor: [Function: defaultErrorRedactor]
+  },
+  response: undefined,
+  error: FetchError2: request to https://cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse failed, reason: 
+      at ClientRequest.<anonymous> (file:///mnt/c/Users/harsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-SZYCJREE.js:7731:18)
+      at ClientRequest.emit (node:events:524:28)
+      at emitErrorEvent (node:_http_client:101:11)
+      at TLSSocket.socketErrorListener (node:_http_client:504:5)
+      at TLSSocket.emit (node:events:524:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    type: 'system',
+    errno: 'ETIMEDOUT',
+    code: 'ETIMEDOUT'
+  },
+  code: 'ETIMEDOUT',
+  [Symbol(gaxios-gaxios-error)]: '6.7.1'
+}
+Attempt 1 failed: You have exhausted your capacity on this model. Your quota will reset after 1s.. Retrying after 5727ms...

@@ -3,3 +3,53 @@ Ripgrep is not available. Falling back to GrepTool.
 Error executing tool write_file: Tool "write_file" not found. Did you mean one of: "read_file", "update_topic", "grep_search"?
 [LocalAgentExecutor] Blocked call: Unauthorized tool call: 'write_file' is not available to this agent.
 [LocalAgentExecutor] Blocked call: Unauthorized tool call: 'run_shell_command' is not available to this agent.
+Error executing tool run_shell_command: Tool "run_shell_command" not found. Did you mean one of: "update_topic", "grep_search", "invoke_agent"?
+Attempt 1 failed: You have exhausted your capacity on this model. Your quota will reset after 0s.. Retrying after 5544ms...
+Attempt 1 failed: You have exhausted your capacity on this model. Your quota will reset after 0s.. Retrying after 5530ms...
+Attempt 2 failed: You have exhausted your capacity on this model. Your quota will reset after 0s.. Retrying after 10649ms...
+Attempt 3 failed. Retrying with backoff... _GaxiosError: request to https://cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse failed, reason: 
+    at Gaxios._request (file:///mnt/c/Users/harsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-SZYCJREE.js:8809:66)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async _OAuth2Client.requestAsync (file:///mnt/c/Users/harsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-SZYCJREE.js:10768:16)
+    at async CodeAssistServer.requestStreamingPost (file:///mnt/c/Users/harsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-SZYCJREE.js:272574:17)
+    at async CodeAssistServer.generateContentStream (file:///mnt/c/Users/harsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-SZYCJREE.js:272374:23)
+    at async file:///mnt/c/Users/harsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-SZYCJREE.js:273221:19
+    at async file:///mnt/c/Users/harsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-SZYCJREE.js:250128:23
+    at async retryWithBackoff (file:///mnt/c/Users/harsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-SZYCJREE.js:270322:23)
+    at async GeminiChat.makeApiCallAndProcessStream (file:///mnt/c/Users/harsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-SZYCJREE.js:292938:28)
+    at async GeminiChat.streamWithRetries (file:///mnt/c/Users/harsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-SZYCJREE.js:292776:29) {
+  config: {
+    url: 'https://cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse',
+    method: 'POST',
+    params: { alt: 'sse' },
+    headers: {
+      'Content-Type': 'application/json',
+      'User-Agent': 'GeminiCLI/0.40.0/gemini-3.1-pro-preview (linux; x64; terminal) google-api-nodejs-client/9.15.1',
+      Authorization: '<<REDACTED> - See `errorRedactor` option in `gaxios` for configuration>.',
+      'x-goog-api-client': 'gl-node/20.20.2'
+    },
+    responseType: 'stream',
+    body: '<<REDACTED> - See `errorRedactor` option in `gaxios` for configuration>.',
+    signal: AbortSignal { aborted: false },
+    retry: false,
+    paramsSerializer: [Function: paramsSerializer],
+    validateStatus: [Function: validateStatus],
+    errorRedactor: [Function: defaultErrorRedactor]
+  },
+  response: undefined,
+  error: FetchError2: request to https://cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse failed, reason: 
+      at ClientRequest.<anonymous> (file:///mnt/c/Users/harsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-SZYCJREE.js:7731:18)
+      at ClientRequest.emit (node:events:524:28)
+      at emitErrorEvent (node:_http_client:101:11)
+      at TLSSocket.socketErrorListener (node:_http_client:504:5)
+      at TLSSocket.emit (node:events:524:28)
+      at emitErrorNT (node:internal/streams/destroy:169:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    type: 'system',
+    errno: 'ETIMEDOUT',
+    code: 'ETIMEDOUT'
+  },
+  code: 'ETIMEDOUT',
+  [Symbol(gaxios-gaxios-error)]: '6.7.1'
+}
